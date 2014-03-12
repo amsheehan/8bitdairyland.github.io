@@ -10,6 +10,15 @@
     <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="../js/page-composition.js"></script>
+    <script type="text/javascript" src="../js/barrier.js"></script>
+    <script type="text/javascript" src="../js/glow.js"></script>
+    <script type="text/javascript" src="../js/bullet.js"></script>
+    <script type="text/javascript" src="../js/effects.js"></script>
+    <script type="text/javascript" src="../js/invader-game.js"></script>
+    <script type="text/javascript" src="../js/invader.js"></script>
+    <script type="text/javascript" src="../js/mothership.js"></script>
+    <script type="text/javascript" src="../js/ship.js"></script>
+    <script type="text/javascript" src="../js/widgets.js"></script>
   </head>
   <body>
 
@@ -18,45 +27,97 @@
   <img src="../assets/images/8bdlheader.jpg" />
 </div-->
 
-<div class="header-lvl">
+<!--div class="header-lvl">
   <canvas id="level-canvas"></canvas>
   <div class="level-ground"></div>
 
   <script type="text/javascript" src="../js/game.js"></script>
   <div class="header-mark cast-name"><h2>Mark Reichers<h2></div>
   <div class="header-alex cast-name"><h2>Alex Sheehan</h2></div>
-</div>
-
+</div-->
+<div class="desktop">
 <div class="header-overlay">
   <div class="title">
     <h1>8-bit Dairyland</h1>
   </div>
   <div class="hearts-container">
     <div class="heart-container">
-      <img src="../assets/images/heartcontainer.png" />
+      <img src="../assets/images/heartcontainer.png" class="life" alt="heart" />
     </div>
     <div class="heart-container">
-      <img src="../assets/images/heartcontainer.png" />
+      <img src="../assets/images/heartcontainer.png" class="life" alt="heart"/>
     </div>
     <div class="heart-container">
-      <img src="../assets/images/heartcontainer.png" />
+      <img src="../assets/images/heartcontainer.png" class="life" alt="heart" />
     </div>
   </div>
+  <div class="header-mark cast-name"><h2>Mark Reichers<h2></div>
+  <div class="header-alex cast-name"><h2>Alex Sheehan</h2></div>
+ </div>
+
+<div class="game-container">
+  <div id="board_holder">
+    <div id="board">
+      <div id="game_over">
+        <p>use the arrow keys to play <strong><a href="javascript:Game.init()">Space Invaders</a></strong></p>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 
 <div class="content-overlay">
-
-  <section class="content">
+  <div class="eppos">
+    <h2>Episodes</h2>
+    <section class="content">
   <article>
-    <h2>title</h2>
+    
+      <h3 class="title-link"><a href="/2014/04/02/test-entry-8bit.html">Episode 10 - Testing the Podcast</a></h3>
+      <div class="sub-title">
+        <p class="episode-date">April  2, 2014 | </p> 
+        <ul class="tag_list">
+          
+            <li class="archive-list inline"><a class="tag_list_link" href="/tag/this">this</a></li>
+          
+            <li class="archive-list inline"><a class="tag_list_link" href="/tag/that">that</a></li>
+          
+            <li class="archive-list inline"><a class="tag_list_link" href="/tag/also">also</a></li>
+          
+            <li class="archive-list inline"><a class="tag_list_link" href="/tag/thus">thus</a></li>
+          
+        </ul>  
+      </div>
+      <div class="entry-summary"><p><p>Chillwave tattooed single-origin coffee banjo artisan. Tofu fanny pack drinking vinegar ethnic. Blue Bottle flannel kogi hashtag. Twee squid fingerstache, fap roof party skateboard Intelligentsia fanny pack Tumblr organic kogi gastropub. Shabby chic asymmetrical locavore Godard cray, food truck ethnic. Put a bird on it kogi drinking vinegar sartorial Vice, cardigan PBR semiotics Intelligentsia Marfa jean shorts. Selvage pop-up gluten-free lo-fi DIY, Schlitz keffiyeh asymmetrical fingerstache freegan shabby chic.</p></p></div>
+    
+      <h3 class="title-link"><a href="/2014/02/02/test-entry-8bit.html">Episode 10 - Testing the Podcast</a></h3>
+      <div class="sub-title">
+        <p class="episode-date">February  2, 2014 | </p> 
+        <ul class="tag_list">
+          
+            <li class="archive-list inline"><a class="tag_list_link" href="/tag/this">this</a></li>
+          
+            <li class="archive-list inline"><a class="tag_list_link" href="/tag/that">that</a></li>
+          
+            <li class="archive-list inline"><a class="tag_list_link" href="/tag/also">also</a></li>
+          
+            <li class="archive-list inline"><a class="tag_list_link" href="/tag/thus">thus</a></li>
+          
+        </ul>  
+      </div>
+      <div class="entry-summary"><p><p>Chillwave tattooed single-origin coffee banjo artisan. Tofu fanny pack drinking vinegar ethnic. Blue Bottle flannel kogi hashtag. Twee squid fingerstache, fap roof party skateboard Intelligentsia fanny pack Tumblr organic kogi gastropub. Shabby chic asymmetrical locavore Godard cray, food truck ethnic. Put a bird on it kogi drinking vinegar sartorial Vice, cardigan PBR semiotics Intelligentsia Marfa jean shorts. Selvage pop-up gluten-free lo-fi DIY, Schlitz keffiyeh asymmetrical fingerstache freegan shabby chic.</p></p></div>
+    
   </article>
 </secton>
 
+  </div>
+    
   
   <h2>FOOTER</h2>
 
 
+  <div class="level-ground"></div>
+  <div class="fuzzy-filter"></div>
 </div>
 
 
