@@ -159,3 +159,7 @@ select {
 .clearfix {
     clear: both;
 }
+
+.inline {
+    display: inline;
+}
