@@ -28,7 +28,19 @@ canvas.height = height;
 
 friction = 0.8;
 gravity = 0.3;
- 
+
+
+var hearts = [];
+
+//hearts
+hearts.push({
+  x: 20,
+  y: 20,
+  width: 100,
+  height: 100
+});
+
+
 // frame animations
 function update(){
 
@@ -48,11 +60,11 @@ function update(){
           player.velX--;
       }
   }
-  if (keys[38] || keys[32]) {
-      // up arrow or space
+  if (keys[38]) {
+    // up arrow or space
     if(!player.jumping){
-     player.jumping = true;
-     player.velY = -player.speed*2;
+      player.jumping = true;
+      player.velY = -player.speed*2;
     }
   }
   

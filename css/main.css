@@ -29,11 +29,7 @@ h1 {
   left: 0px;
   width: 100%;
   background-color: #209dcb;
-}
-
-.header-overlay {
-  width: 100%;
-  z-index: 2;
+  z-index: -1;
 }
 
 #level-canvas {
@@ -47,13 +43,51 @@ h1 {
   background-image: url('../assets/images/grass3.png');
 }
 
+.header-overlay {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
 .title {
-  margin-top: 10em; 
+  margin-top: 5%; 
   text-align: center;
   color: white;
 }
 
+.hearts-container {
+  text-align: center;
+  margin-top: 2.4em;
+}
+
+.heart-container {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+
+.cast-name h2{
+  font: 1.2em/100% 'Press Start 2P', cursive;
+  color: #f4f4f4;
+}
+
+.header-mark {
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+}
+
+.header-alex {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+}
+
 .content-overlay {
-  margin-top: -11em;
-  background-color: #209dcb;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1000px;
+  background-color: #f4f4f4;
 }
